@@ -107,7 +107,7 @@ body{
     text-align: center;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 500px) {
     .header-box{
         display: flex;
         flex-direction: column;
