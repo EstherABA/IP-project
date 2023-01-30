@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Address Tracker</title>
+  <link rel="stylesheet" href="./style.css"> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+  crossorigin=""/>
+</head>
+<body>
+
+<!-- ######################## HEADER ######################## -->
+  <div class="header-box">
+    <h1 class="head-text">IP Address Tracker</h1>
+
+      <div class="search-bar">
+        <input id="inputId" class="search-input" placeholder="  Search for any IP address or domain"> </input>
+        <button id="buttonId" class="search-button"> <img src="./assets/icon-arrow.svg"/> </button>
+      </div>
+
+  </div>
+
+<!-- ######################## INFORMATION ######################## -->
+  <div class="information">
+    <!-- ## IP ## -->
+      <div class="info-box" id="ipAddress">
+        <div class="info-box-title">IP Address</div>
+        <div class="info-box-content" id="ipAddressId" ></div>
+      </div>
+      <hr class="hr">
+    <!-- ## LOCATION ## -->
+      <div class="info-box location-info" id="location">
+        <div class="info-box-title location-title">Location</div>
+        <div class="info-box-content" id="locationId"></div>
+        <div id="postalCode" class="info-box-content"> </div>
+      </div>
+      <hr class="hr">
+    <!-- ## TIME ZONE ## -->
+      <div class="info-box" id="timezone">
+        <div class="info-box-title">Timezone</div>
+        <div class="info-box-content" id="timezoneId"> </div>
+      </div>
+      <hr class="hr">
+    <!-- ## ISP ## -->
+      <div class="info-box" id="isp">
+        <div class="info-box-title">ISP</div>
+        <div class="info-box-content" id="ispId"></div>
+      </div>
+  </div>
+
+<!-- ######################## MAP ######################## -->
+  <div id="map" class="map"></div>
+  
+<!-- #################### ATTRIBUTION #################### -->
+  <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Esther Abasov</a>.
+  </div>
+
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  ></script>
+  <script type="module" src="./main.js"></script>
+
+
+</body>
+</html>
